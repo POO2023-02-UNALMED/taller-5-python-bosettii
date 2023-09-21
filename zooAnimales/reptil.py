@@ -30,7 +30,7 @@ class Reptil(Animal):
         cls.iguanas +=1
 
     @classmethod
-    def crearSalmon(cls,nombre,edad,genero):
+    def crearSerpiente(cls,nombre,edad,genero):
         color = "blanco"
         l = 1
         h = "jungla"

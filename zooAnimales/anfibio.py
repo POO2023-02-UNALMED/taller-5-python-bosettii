@@ -14,7 +14,7 @@ class Anfibio(Animal):
     def getColorPiel(self):
         return self._colorPiel
     
-    def isVenomoso(self):
+    def isVenenoso(self):
         return self._venomoso
     
 
@@ -32,7 +32,7 @@ class Anfibio(Animal):
         
     
     @ classmethod
-    def crearRana(cls,nombre,edad,genero):
+    def crearSalamandra(cls,nombre,edad,genero):
         c = "negro y amarillo"
         v = False
         h = "selva"
