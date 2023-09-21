@@ -1,9 +1,5 @@
 
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
+import zooAnimales
 
 class Animal():
     totalAnimal = 0
@@ -32,14 +28,23 @@ class Animal():
     def getZona(self):
         return self._zona
     
-    @ classmethod
-    def totalPorTipo(self):
-        return ("Mamiferos: " + Mamifero.cantidadMamiferos()+"\nAves: "+ Ave.cantidadAves() + "\nReptiles: " + Reptil.cantidadReptiles() + "\nPeces: " + Pez.cantidadPeces() + "\nAnfibios: " + Anfibio.cantidadAnfibios())
+
+
+    @classmethod
+    def totalPorTipo(cls):
+        m = zooAnimales.mamifero.Mamifero.cantidadMamiferos()
+        a = zooAnimales.ave.Ave.cantidadAves()
+        r = zooAnimales.reptil.Reptil.cantidadReptiles()
+        p = zooAnimales.pez.Pez.cantidadPeces()
+        an = zooAnimales.anfibio.Anfibio.cantidadAnfibios()
+
+        return (f'Mamiferos : {m}\nAves : {a}\nReptiles : {r}\nPeces : {p}\nAnfibios : {an}')
+
 
     def toString(self):
         if self.getZona() == None:
-            return "Mi nombre es " + self.getNombre() + ", tengo una edad de " + self.getEdad() + ", habito en " + self.getHabitat() + " y mi genero es " + self.getGenero()
+            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"
         
-        return "Mi nombre es " + self.getNombre() + ", tengo una edad de " + self.getEdad() + ", habito en " + self.getHabitat() + " y mi genero es " + self.getGenero() + ", la zona en la que me ubico es" + self.getZona() + ", en el zoo" + self.zona.getZoo()
+        return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}, la zona en la que me ubico es {self.getZona()}, en el zoo {self.zona.getZoo()}"
 
 

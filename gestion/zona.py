@@ -1,5 +1,3 @@
-from zooAnimales.animal import Animal
-
 class Zona():
 
     animales = []
