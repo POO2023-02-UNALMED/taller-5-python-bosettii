@@ -18,7 +18,7 @@ class Zoologico() :
     def getZona(self):
         return self._zona
     
-    def agregarZona(self,zona, lista = None):
+    def agregarZonas(self,zona, lista = None):
         if lista == None:
             lista = []
         lista.append(zona)
