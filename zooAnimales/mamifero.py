@@ -37,4 +37,4 @@ class Mamifero(Animal):
         h = "selva"
         pel = True
         cls.listado.append(Mamifero(nombre,edad,genero,p,h,pel))
-        cls.caballos +=1
+        cls.leones +=1
