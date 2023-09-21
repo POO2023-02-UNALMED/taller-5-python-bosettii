@@ -4,8 +4,6 @@ class Zona():
 
     def __init__(self,nombre,zoo = None):
         self._nombre=nombre
-        if zoo == None:
-            zoo = []
         self._zoo=zoo
         
     def getNombre(self):

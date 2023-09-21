@@ -24,7 +24,7 @@ class Mamifero(Animal):
         return cls.listado.__len__
     
     @ classmethod
-    def crearCaballos(cls,nombre,edad,genero):
+    def crearCaballo(cls,nombre,edad,genero):
         p = 4
         h = "pradera"
         pel = True
@@ -32,7 +32,7 @@ class Mamifero(Animal):
         cls.caballos +=1
 
     @ classmethod
-    def crearLeones(cls,nombre,edad,genero):
+    def crearLeon(cls,nombre,edad,genero):
         p = 4
         h = "selva"
         pel = True
