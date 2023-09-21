@@ -12,7 +12,6 @@ class Animal():
         self._genero = genero
         Animal.totalAnimal += 1
         self._zona = zona
-        zona.agregarAnimales(self)
 
     def getNombre(self):
         return self._nombre
@@ -28,6 +27,9 @@ class Animal():
     
     def getZona(self):
         return self._zona
+    
+    def setZona(self,z):
+        self._zona = z
     
 
 
