@@ -17,6 +17,5 @@ class Zona():
             lista = []
         lista.append(animal)
 
-    @ classmethod
-    def cantidadAnimales(cls):
-        return cls.animales.__len__
+    def cantidadAnimales(self):
+        return (len(self._animales))
